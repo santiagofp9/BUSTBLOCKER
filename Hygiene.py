@@ -149,26 +149,40 @@ title_actor = merg2.drop_duplicates()
 # In[13]:
 
 
+#Cleaning category Nan
+category.loc[17] = [17, 'Unknown']
+film2['category_id'].fillna(17, inplace=True)
+
+
+# In[14]:
+
+
 cinefilo = rental.customer_id.value_counts()
 stats = cinefilo.describe()
 stats['IQR'] = stats['75%'] - stats['25%']
 #stats
 
 
-# In[14]:
+# In[15]:
 
 
 film2.info()
 
 
-# In[15]:
+# In[16]:
+
+
+film2.head()
+
+
+# In[17]:
 
 
 #Data cleaning seams ready, the next file will construct the database.
 #Exporting data
 
 
-# In[16]:
+# In[18]:
 
 
 category.to_csv('data/category_clean.csv', index=False)
@@ -177,4 +191,10 @@ rental.to_csv('data/rental_clean.csv', index=False)
 inventory.to_csv('data/inventory_clean.csv', index=False)
 film2.to_csv('data/film_clean.csv', index=False)
 title_actor.to_csv('data/title_actor.csv', index=False)
+
+
+# In[ ]:
+
+
+
 
