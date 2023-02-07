@@ -1,7 +1,7 @@
 # BUSTBLOCKER
 sql-data-base-building
 
-<img src="/BUSTBLOCKER.jpgg" alt="Alt text" title="Optional title">
+<img src="https://github.com/santiagofp9/BUSTBLOCKER/blob/main/BUSTBLOCKER.jpeg" alt="Alt text" title="Optional title">
 
 
-![alt text](/santiagofp9/BUSTBLOCKER/BUSTBLOCKER.jpg)
+![alt text](https://github.com/santiagofp9/BUSTBLOCKER/blob/main/BUSTBLOCKER.jpeg)
